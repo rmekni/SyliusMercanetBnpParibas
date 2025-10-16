@@ -1,0 +1,11 @@
+{% set environment = hookable_metadata.context.form.gatewayConfig.config.environment %}
+{% set secret_key = hookable_metadata.context.form.gatewayConfig.config.secret_key %}
+{% set merchant_id = hookable_metadata.context.form.gatewayConfig.config.merchant_id %}
+{% set key_version = hookable_metadata.context.form.gatewayConfig.config.key_version %}
+
+<div>
+	{{ form_row(environment) }}
+	{{ form_row(secret_key) }}
+	{{ form_row(merchant_id) }}
+	{{ form_row(key_version) }}
+</div>

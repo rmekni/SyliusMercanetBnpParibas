@@ -1,0 +1,6 @@
+sylius_twig_hooks:
+    hooks:
+        "sylius_admin.payment_method.update.content.form.sections.gateway_configuration.agenceweb_mercanet_bnp_paribas":
+            alma_configuration:
+                template: "admin/mercanet_bnp_paribas/form/mercanet_bnp_paribas_configuration.html.twig"
+                priority: 3

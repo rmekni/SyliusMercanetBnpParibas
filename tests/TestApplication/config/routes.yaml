@@ -1,0 +1,5 @@
+acme_sylius_example_admin:
+    resource: "@AgencewebMercanetBnpParibasPlugin/config/routes/admin.yaml"
+
+acme_sylius_example_shop:
+    resource: "@AgencewebMercanetBnpParibasPlugin/config/routes/shop.yaml"
