@@ -1,5 +1,5 @@
 <?php
 
 return [
-    Agenceweb\MercanetBnpParibasPlugin\MercanetBnpParibasPlugin::class => ['all' => true],
+    Agenceweb\MercanetBnpParibasPlugin\AgencewebMercanetBnpParibasPlugin::class => ['all' => true],
 ];
