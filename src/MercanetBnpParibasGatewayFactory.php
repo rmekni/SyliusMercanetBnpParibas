@@ -11,18 +11,20 @@ use Payum\Core\GatewayFactory;
 
 final class MercanetBnpParibasGatewayFactory extends GatewayFactory
 {
+    const FACTORY_NAME = 'mercanet_bnp_paribas_payment';
+
     /**
      * @inheritDoc
      */
     protected function populateConfig(ArrayObject $config): void
     {
         $config->defaults([
-            'payum.factory_name' => 'mercanet_bnp_paribas',
+            'payum.factory_name' => self::FACTORY_NAME,
             'payum.factory_title' => 'Mercanet BNP Paribas',
 
             'payum.action.convert' => new ConvertPaymentAction(),
 
-            'payum.http_client' => '@bitbag.mercanet_bnp_paribas.bridge.mercanet_bnp_paribas_bridge',
+            'payum.http_client' => '@agenceweb.mercanet_bnp_paribas.bridge.mercanet_bnp_paribas_bridge',
         ]);
 
         if (false == $config['payum.api']) {

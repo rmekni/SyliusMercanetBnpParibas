@@ -1,6 +1,6 @@
 <?php
 
-namespace Agenceweb\MercanetBnpParibas\Form\Type;
+namespace Agenceweb\MercanetBnpParibasPlugin\Form\Type;
 
 use Agenceweb\MercanetBnpParibasPlugin\Legacy\Mercanet;
 use Symfony\Component\Form\AbstractType;
@@ -56,9 +56,9 @@ class MercanetBnpParibasConfigurationType extends AbstractType
                 $data = $event->getData();
                 $data['payum.http_client'] = '@agenceweb.mercanet_bnp_paribas.bridge.mercanet_bnp_paribas_bridge';
                 $event->setData($data);
-            })
-        ;
+            });
     }
+
 
     public function getBlockPrefix(): string
     {

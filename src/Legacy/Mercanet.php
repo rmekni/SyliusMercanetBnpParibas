@@ -1,18 +1,6 @@
 <?php
 
-/*
- * This file has been created by developers from BitBag.
- * Feel free to contact us once you face any issues or want to start
- * You can find more information about us on https://bitbag.io and write us
- * an email on hello@bitbag.io.
- */
-
 declare(strict_types=1);
-
-/**
- * This file is a part of OpenSource Mercanet payment library adjusted for purposes of this project.
- * We are not the authors of the core logic of this class.
- */
 
 namespace Agenceweb\MercanetBnpParibasPlugin\Legacy;
 
@@ -767,6 +755,7 @@ class Mercanet
             echo "service did not sent back data\n";
             die();
         }
+
         $result_array = json_decode($result);
 
         if ('00' == $result_array->redirectionStatusCode) {

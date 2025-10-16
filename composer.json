@@ -64,12 +64,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Agenceweb\\MercanetBnpParibas\\": "src/"
+      "Agenceweb\\MercanetBnpParibasPlugin\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Tests\\Agenceweb\\MercanetBnpParibas\\": [
+      "Tests\\Agenceweb\\MercanetBnpParibasPlugin\\": [
         "tests/",
         "tests/TestApplication/src/"
       ]

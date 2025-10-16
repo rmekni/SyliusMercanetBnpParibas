@@ -14,7 +14,7 @@ final class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('agenceweb_mercanet_bnp_paribas');
+        $treeBuilder = new TreeBuilder('agenceweb_mercanet_bnp_paribas_plugin');
         $rootNode = $treeBuilder->getRootNode();
 
         return $treeBuilder;
